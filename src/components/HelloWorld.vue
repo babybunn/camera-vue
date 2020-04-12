@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <input type="file" accept="video/*" capture >
     <video id="myVideo" class="video-js vjs-default-skin" playsinline></video>
   </div>
 </template>
@@ -44,6 +45,8 @@ export default {
         }
       }
     }
+  },
+  methods: {
   },
   mounted () {
     /* eslint-disable no-console */
